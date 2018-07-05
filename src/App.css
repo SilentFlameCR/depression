@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Roboto:400,700,700i');
+
+div.masthead {
+    width: 100%;
+    background: linear-gradient(to right,rgba(0,29,46,0.75) 0%,
+    rgba(0,29,45,0.76) 20%,
+    rgba(0,28,44,0.81) 75%,
+    rgba(249, 31, 17,0.92) 90%,
+    rgba(245,175,25,0.94) 100%
+    );
+    margin: 0;
+    color: #fff;
+}
+
+.title {
+    font-family: Roboto;
+    padding: 4px;
+}
+
+.sub-title {
+    display: inline;
+    font-family: Lora;
+    padding: 4px;
+    border: 1px solid #fff; 
+}
+
+.intro {
+    margin-top: 2em;
+    font-family: Lora;
+}
+
+.post-editor-button {
+    float: right;
+    margin-top: 1em;
+}
+
+.post-editor, .post-body {
+    margin-top: 1em;
+}
+
+.video {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.video iframe {
+    
+}
+
+@media only screen and (min-width: 720px) {
+    .post-editor, .post-body {
+        margin: 0 20%;
+    }
+    
+    .post-editor, .post-body {
+        margin-top: 1em;
+    }
+    
+    .video {
+        margin-top: 3em;
+    }
+}
