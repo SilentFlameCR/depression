@@ -9,6 +9,22 @@ class ThreadDisplay extends React.Component {
       posts: [],
 
     }
+    
+    componentDidMount() {
+        const itemsRef = firebase.database().ref('msgs');
+        itemsRef.on('value', (snapshot) => {
+            const items = snapshot.val();
+            let posts = this.state.posts;
+            
+            for(let item in items) {
+                posts.push(items[item]);
+            }
+            
+            this.setState({
+                posts: posts
+            })
+        });
+    }
 
     addPost = (newPostBody) => {
       const newState = Object.assign({}, this.state);

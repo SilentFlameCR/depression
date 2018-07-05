@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import firebase from 'firebase/app';
-import 'firebase/database';
 import ThreadDisplay from './ThreadDisplay/component/ThreadDisplay';
 import Video from './Video/Video';
+import firebase from './Firebase/Firebase.js';
 
 class App extends Component {
 

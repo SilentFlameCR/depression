@@ -43,10 +43,6 @@ div.masthead {
     margin-bottom: 1em;
 }
 
-.video iframe {
-    
-}
-
 @media only screen and (min-width: 720px) {
     .post-editor, .post-body {
         margin: 0 20%;
