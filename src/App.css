@@ -43,6 +43,36 @@ div.masthead {
     margin-bottom: 1em;
 }
 
+#home-button {
+    background: linear-gradient(to right, #232526, #414345);
+}
+
+#home-button a {
+    color: white;
+}
+
+#home-button a:hover {
+    text-decoration: none;
+}
+
+#home-button {
+  border: 0;
+  padding: 8px 20px;
+  margin: 20px 0;
+  border-radius: 2px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #f16051;
+  color: #fff;
+  font-weight: 100;
+}
+
+#home-button:active {
+  outline: none;
+}
+
 @media only screen and (min-width: 720px) {
     .post-editor, .post-body {
         margin: 0 20%;

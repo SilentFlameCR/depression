@@ -24,6 +24,8 @@ class App extends Component {
           
           <div className="container">
           
+          <button id="home-button"><a href="http://www.rahulrodrigues.ca">Home</a></button>
+          
           <div className="row">
               
                 <div className="col-12 intro">
