@@ -14,16 +14,24 @@ class PostEditor extends React.Component {
       
     }
     
+    isWhitespaceOrEmpty = (text) => {
+        return !/[^\s]/.test(text);
+    }
+    
     createPost = () => {
-      this.props.addPost(this.state.newPostBody);
-        
-        const itemsRef = firebase.database().ref('msgs');
-        itemsRef.push(this.state.newPostBody);
-        
-        
-        this.setState({
-          newPostBody: '',
-      })
+     
+       if(this.isWhitespaceOrEmpty(this.state.newPostBody) === false){ 
+           
+            this.props.addPost(this.state.newPostBody);
+
+            const itemsRef = firebase.database().ref('msgs');
+            itemsRef.push(this.state.newPostBody);
+
+
+            this.setState({
+              newPostBody: '',
+            })
+      }
     }
     
     render() {
